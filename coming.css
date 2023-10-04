@@ -17,29 +17,6 @@ div.container {
     width: 100%;
 }
 
-div.container div.logo {
-    margin-top: 20px;
-}
-
-div.container .body-contents {
-    margin-top: 40px;
-}
-
-div.container .body-contents .message {
-    color:  #071852;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    padding: 0 5%;   
-}
-
-div.container .body-contents .message div p:nth-child(1) {
-    margin-bottom: 20px;
-}
-
-div.container .body-contents .message div p:nth-child(2) {
-    line-height: 25px;
-}
-
 div.container .body-contents section {
     margin-top: 40px;
 }
@@ -52,10 +29,11 @@ div.container section h1 {
     padding: 30px 0;
 }
 
-div.container  section div.section-contents:nth-child(odd) {
+div.container section div.section-contents:nth-child(odd) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center
 }
 
 div.container section div.section-contents:nth-child(even) {
@@ -64,24 +42,24 @@ div.container section div.section-contents:nth-child(even) {
     background: #fdfdfd;
 }
 
-div.container  section div.section-contents div {
+div.container section div.section-contents div {
     width: 45%;
     padding: 40px 5%;
 }
 
-div.container  section div.section-contents div.image img {
+div.container section div.section-contents div.image img {
     width: 150px;
-    height:150px;
+    height: 160px;
 }
 
-div.container  section div.section-contents div.content {
+div.container section div.section-contents div.content {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-div.container  section div.section-contents div.content h4 {
- color: #071852;
+div.container section div.section-contents div.content h4 {
+    color: #071852;
     font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
 }
@@ -97,4 +75,21 @@ div.container section div.section-contents div.content a button {
     background: #EB546E;
     color: white;
     margin-top: 12px
+}
+
+div.container .body-contents .message {
+    color: #071852;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 0 5%;
+    margin-top: 40px;
+}
+
+div.container a button {
+    width: 150px;
+    height: 35px;
+    border-radius: 50rem;
+    margin: 40px 0;
+    background: #071852;
+    color: white;
 }
