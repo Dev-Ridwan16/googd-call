@@ -44,7 +44,7 @@ div.container .body-contents section {
     margin-top: 40px;
 }
 
-div.container section h1 {
+div.container h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -88,14 +88,23 @@ div.container section div.section-contents div.content a button {
     margin-top: 12px
 }
 
+div.container a button {
+    width: 150px;
+    height: 35px;
+    border-radius: 50rem;
+    margin: 40px 0;
+    background: #071852;
+    color: white;
+}
+
 @media screen and (max-width: 767px) {
-div.container section div.section-contents:nth-child(odd) {
+div.container section  div.section-contents:nth-child(odd) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    div.container section div.section-contents:nth-child(even) {
+    div.container section  div.section-contents:nth-child(even) {
         display: flex;
         flex-direction: row;
         background: #fdfdfd;
@@ -105,17 +114,43 @@ div.container section div.section-contents:nth-child(odd) {
 
 @media screen and (min-width: 768px) {
 
-    div.container section div.wrap {
+    div.container section {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
+        max-width: 85%;
+        margin: 0 auto;
+        
     }
 
+    
                 
 
-    /* div.container section div.wrap div.section-contents {
+    div.container section  div.section-contents {
         display: flex;
         flex-direction: column;
-    } */
+        align-items: center;
+        text-align: center;
+        width: 500px
+    }
+
+div.container section div.section-contents div.content a button {
+    display: none
+}
+
+/* Coming soon */
+div.container section.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        max-width: 105%;
+        margin: 0 0;
+}
+
+div.container section.section-2 div.section-contents {
+    display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: start;
+}
 
 }
