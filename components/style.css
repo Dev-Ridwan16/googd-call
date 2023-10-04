@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: #071852;
+}
+
+div.container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.container div.logo {
+    margin-top: 20px;
+}
+
+div.container .body-contents {
+    margin-top: 40px;
+}
+
+div.container .body-contents .message {
+    color:  #071852;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 0 5%;   
+}
+
+div.container .body-contents .message div p:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+div.container .body-contents .message div p:nth-child(2) {
+    line-height: 25px;
+}
+
+div.container .body-contents section {
+    margin-top: 40px;
+}
+
+div.container section h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #071852;
+    padding: 30px 0;
+}
+
+div.container  section div.section-contents:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+div.container section div.section-contents:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+    background: #fdfdfd;
+}
+
+div.container  section div.section-contents div {
+    width: 45%;
+    padding: 40px 5%;
+}
+
+div.container  section div.section-contents div.image img {
+    width: 150px;
+    height:150px;
+}
+
+div.container  section div.section-contents div.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.container  section div.section-contents div.content h4 {
+ color: #071852;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+div.container section div.section-contents div.content span {
+    font-size: 12px;
+}
+
+div.container section div.section-contents div.content button {
+    width: 150px;
+    height: 30px;
+    border-radius: 50rem;
+    background: #EB546E;
+    color: white;
+    margin-top: 12px
+}
